@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>DataStock</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
+    <meta charset="UTF-8">
+    <title>DataStock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    <style>
+        body {
+            /* aquí tu CSS */
+        }
+    </style>
+</head>
     body {
       font-family: 'Montserrat', sans-serif;
       margin: 0;
