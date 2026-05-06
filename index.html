@@ -53,6 +53,7 @@
       position: relative;
       color: white;
       z-index: 1;
+      animation: fadeIn 2s ease-in;
     }
     header h1 {
       font-size: 3em;
@@ -80,6 +81,13 @@
     section {
       padding: 60px 20px;
       text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease-in-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
     section:nth-child(even) {
       background-color: #eef3f7;
@@ -123,6 +131,14 @@
       text-align: center;
       padding: 20px;
     }
+    footer nav {
+      margin-top: 10px;
+    }
+    footer nav a {
+      color: #ffcc00;
+      margin: 0 10px;
+      text-decoration: none;
+    }
     /* Botón flotante de WhatsApp */
     .whatsapp-float {
       position: fixed;
@@ -145,12 +161,33 @@
       height: 35px;
       margin-top: 12px;
     }
+    .whatsapp-float::after {
+      content: "Chatea con nosotros";
+      position: absolute;
+      right: 70px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .whatsapp-float:hover::after {
+      opacity: 1;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
   </style>
 </head>
 <body>
   <nav>
     <a href="#servicios">Servicios</a>
     <a href="#sobre-mi">Sobre mí</a>
+    <a href="#testimonios">Testimonios</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
@@ -202,22 +239,5 @@
     <a href="#contacto" class="btn">Contáctame</a>
   </section>
 
-  <section id="contacto">
-    <h2 class="titulo-seccion">Contacto</h2>
-    <a href="https://wa.me/523322303746" class="btn" style="background-color:#25D366;">
-      Escríbeme por WhatsApp
-    </a>
-    <p style="margin-top:20px;">Teléfono: <strong>+52 332 230 3746</strong></p>
-  </section>
-
-  <footer>
-    <img src="logo-azul.png" alt="DataStock" width="120" style="margin-bottom: 10px;">
-    <p>© 2026 Consultoría en Inventarios "DataStock" - Guadalajara</p>
-  </footer>
-
-  <!-- Botón flotante de WhatsApp con imagen PNG -->
-  <a href="https://wa.me/523322303746" class="whatsapp-float" target="_blank">
-    <img src="whatsapp.png" alt="WhatsApp">
-  </a>
-</body>
-</html>
+  <section id="testimonios">
+    <h2 class="titulo-seccion">Testimonios</h2>
