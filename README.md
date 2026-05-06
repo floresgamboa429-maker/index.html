@@ -19,7 +19,7 @@ Este sitio está diseñado como proyecto estático (HTML, CSS, JS) y puede despl
 
 ## 👤 Autor
 Carlos  
-Supervisor de Materiales en Jabil | Consultor en Inventarios  
+Supervisor de Materiales en Jabil y Flex | Consultor en Inventarios  
 Guadalajara/Zapopan, Jalisco, México
 
 ---
